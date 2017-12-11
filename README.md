@@ -16,7 +16,7 @@ Maven
 Java
 ```
 
-### Installing
+### Installing and Running
 
 There is two ways to run this, they are:
 
