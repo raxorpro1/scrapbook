@@ -65,6 +65,7 @@ java -jar scrapbook.jar --spring.profiles.active=local
 * [Hibernate](http://hibernate.org/) - Mapping Tool Framework
 * [Spring Data](http://projects.spring.io/spring-data/) - Spring-based programming model
 * [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Another Front-end framework
+* [FreeMarker](https://freemarker.apache.org/) - A template engine to generate JAVA text output 
 
 
 
