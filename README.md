@@ -1,29 +1,79 @@
-# scrapbook
+# ScrapBook 1.0
+
 This is a simples website that adds, edit and deletes messages on a scrapbook using PUT, GET, DELETE, POST HTTP methods.
 
--=-=-=-=-=-=-=-=-=-=-
+## Getting Started
 
-Technologies Used:
-Spring Boot || 
-Angular JS || 
-Hibernate/JPA || 
-Spring Data || 
-Bootstrap.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
--=-=-=-=-=-=-=-=-=-=-
+### Prerequisites
+
+as follows:
+
+```
+Eclipse
+Maven
+Java
+```
+
+### Installing
+
+There is two ways to run this, they are:
+
+Eclipse Project:
+
+```
+On eclipse -> Right click on Scrapbook.java -> Run as -> Run Configuration -> Java Application 
+```
+
+and then open Arguments TAB and put the code below on VM Arguments
+
+```
+-Dspring.profiles.active=local
+```
+
+This will execute the code on the local profile and save stuff on H2.
+To save it on a DB(postgres in this case) chande local to prod, as:
+
+```
+-Dspring.profiles.active=prod
+```
+
+Finally hit your browser with
 
 
-Running mode:
-1. On eclipse -> Right click on Scrapbook.java -> Run as -> Run Configuration -> Java Application -> Arguments(TAB) and then set the VM Arguments to -Dspring.profiles.active=local
-1.1 hit your browser as 'localhost:8080/scrapbook' and keep an eye for the HTTP methods requests=](Firefox prefered)
-1.1.1 This should start the database on H2
-
-2. Jar File. Inside the Target Folder there is a Jar File named Scrapbook.jar, Run it on CMD as -> java -jar Scrapbook.jar  --spring.profiles.active=local
-2.1 as 1.1, hit your browser with "localhost:8080/scrapbook" (Firefox Prefered)
-2.1.1 Also starts in local profile
-
-If 'Local' is changed to 'PROD' it will look up for a SQL connection(But will need your DB to be running with exact columns and table names as Message.java)
-Also check the DB port.
+```
+localhost:8080/scrapbook
+```
 
 
-*Firefox is prefered since bootstrap is acting strange with other browers(it will not display the pagination and message search by id)
+*Just remember to check the ports your DB is listening and to have the same table and columns as Message.java
+
+Second way is running the jar file directly, for that:
+Find the scrapbook.jar inside the target folder and run a CMD command from that folder:
+
+```
+java -jar scrapbook.jar --spring.profiles.active=local
+```
+
+
+
+## Built With
+
+* [Spring Boot](https://spring.io/docs) - The framework used
+* [Angular JS](https://angularjs.org/) - The front-end framework
+* [Hibernate](http://hibernate.org/) - Mapping Tool Framework
+* [Spring Data](http://projects.spring.io/spring-data/) - Spring-based programming model
+* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Another Front-end framework
+
+
+
+## Authors
+
+* **Matheus Mordost** - *Scrapbook 1.0* - [Raxorpro1](https://github.com/raxorpro1)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
