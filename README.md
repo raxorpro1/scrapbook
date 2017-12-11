@@ -1,14 +1,17 @@
 # scrapbook
 This is a simples website that adds, edit and deletes messages on a scrapbook using PUT, GET, DELETE, POST HTTP methods.
 
-===============
+-=-=-=-=-=-=-=-=-=-=-
+
 Technologies Used:
-Spring Boot
-Angular JS
-Hibernate/JPA
-Spring Data
-Bootstrap
-=================
+Spring Boot || 
+Angular JS || 
+Hibernate/JPA || 
+Spring Data || 
+Bootstrap.
+
+-=-=-=-=-=-=-=-=-=-=-
+
 
 Running mode:
 1. On eclipse -> Right click on Scrapbook.java -> Run as -> Run Configuration -> Java Application -> Arguments(TAB) and then set the VM Arguments to -Dspring.profiles.active=local
